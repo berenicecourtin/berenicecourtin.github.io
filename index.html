@@ -58,29 +58,6 @@
       width: 200px;
       height: auto;
       margin: 10px;
-      cursor: pointer;
-    }
-    
-    .lightbox {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      z-index: 9999;
-    }
-    
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
     }
     
     section p {
@@ -95,24 +72,6 @@
       text-align: center;
     }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var galleryImages = document.querySelectorAll('.gallery img');
-      var lightbox = document.querySelector('.lightbox');
-      var lightboxImg = document.querySelector('.lightbox img');
-      
-      galleryImages.forEach(function(img) {
-        img.addEventListener('click', function() {
-          lightbox.style.display = 'flex';
-          lightboxImg.src = this.src;
-        });
-      });
-      
-      lightbox.addEventListener('click', function() {
-        lightbox.style.display = 'none';
-      });
-    });
-  </script>
 </head>
 <body>
   <header>
