@@ -58,16 +58,33 @@
       width: 200px;
       height: auto;
       margin: 10px;
-      transition: transform 0.3s ease-in-out;
       cursor: pointer;
     }
     
-    .gallery img.expanded {
-      transform: scale(1.2);
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+    }
+    
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
     
     section p {
-      text-align: center;
+      text-align: justify;
       margin: 0 30px;
     }
     
