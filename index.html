@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>index</title>
- <style>
-    body {
-      font-family: Arial, sans-serif;
+  <title>Your Website Title</title>
+  <style>
+    /* Reset default styles */
+    body, h1, h2, h3, h4, h5, h6, p, ul, li {
       margin: 0;
       padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Global styles */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
     }
     
     header {
@@ -14,10 +25,6 @@
       color: #fff;
       padding: 20px;
       text-align: center;
-    }
-    
-    h1 {
-      margin: 0;
     }
     
     nav {
@@ -44,39 +51,23 @@
     }
     
     section {
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: space-between;
+      padding: 20px 0;
+      text-align: center;
     }
     
-    .text {
-      flex-basis: 50%;
-      text-align: left;
-      margin-right: 30px;
+    section h2 {
+      margin-bottom: 20px;
     }
     
     .gallery {
-      flex-basis: 50%;
-      display: flex;
-      justify-content: flex-end;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
     
     .gallery img {
       width: 100%;
       height: auto;
-      margin: 10px;
-      transition: transform 0.3s ease-in-out;
-    }
-    
-    .gallery img:hover {
-      transform: scale(1.5);
-    }
-    
-    section p {
-      text-align: justify;
-      margin-bottom: 20px;
     }
     
     footer {
@@ -89,47 +80,40 @@
 </head>
 <body>
   <header>
-    <h1>Berenice Gaca Courtin</h1>
+    <h1>Your Name / Logo</h1>
   </header>
   
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#biographie">Biography</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   
   <section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is a simple portfolio website.</p>
-  </section>
-  
-  <section id="Biographie">
-    <h2>Biographie</h2>
-    <p>Bérénice Courtin est une artiste pluridisciplinaire, née en 1994 originaire de Paris, basée à Genève, après son Master en Arts Appliqués Contemporains à l’école Massana à Barcelone et un échange à Genève, à l’école HEAD. Elle se concentre sur les arts textiles, l’audiovisuel et la performance. Elle travaille depuis deux ans, sur une recherche autour de l’histoire de son grand-père Kazimierz Gaca. Il était un résistant polonais pendant la Seconde Guerre mondiale, travaillant avec la machine ENIGMA. Elle a réalisé des tissus avec un métier à tisser numérique Jacquard (TC2), où elle a caché des codes, inspirés des messages cryptés, comparant le métier à tisser et la machine, les deux étant à l’origine de l’ordinateur et du code binaire. Elle a également collaboré avec des artistes pour créer une performance de cinéma expérimental sur ce sujet qui a été présentée au festival La Alternativa, au CCCB de Barcelone.</p>
-  </section>
-  
-  <section id="projects">
-    <h2>My Projects</h2>
-    <p>Display your projects with descriptions and links.</p>
-    <div class="gallery">
-      <img src="webs1.JPG" alt="Image 1">
-      <img src="webs2.JPG" alt="Image 2">
-      <img src="webs3.JPG" alt="Image 3">
-      <img src="webs4.JPG" alt="Image 5">
-      <!-- Add more images here -->
+    <div class="container">
+      <h2>Welcome to Your Website</h2>
+      <p>Insert your introductory text here.</p>
     </div>
   </section>
   
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>berenice.courtin(at)gmail.com.</p>
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      
+      <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <!-- Add more images here -->
+      </div>
+    </div>
   </section>
   
-  <footer>
-    <p>&copy; 2023 Berenice Courtin. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>Insert information about yourself and your skills.</p>
+    </div>
