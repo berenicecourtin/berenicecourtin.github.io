@@ -10,7 +10,7 @@ qr = qrcode.QRCode(
     border=4,
 )
 
-qr.add_data("https://www.berenicecourtin.com/project-b.html")
+qr.add_data("https://www.berenicecourtin.com/project-AnnaKowalska.html")
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
