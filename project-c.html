@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project C — Bérénice Gaça Courtin</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #565656;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 15px;
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      color: #000;
+      margin: 0;
+    }
+    nav {
+      text-align: right;
+      font-weight: normal;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      font-size: 15px;
+      font-weight: normal;
+      color: #000;
+      text-decoration: none;
+    }
+    section {
+      padding: 60px 0;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 15px;
+      margin-bottom: 30px;
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-style: italic;
+    }
+    section p,
+    section a {
+      font-size: 15px;
+      margin: 0 auto 20px;
+      max-width: 760px;
+      color: #000;
+    }
+    section a {
+      font-weight: bold;
+      color: blue;
+      text-decoration: none;
+    }
+    section a:hover {
+      text-decoration: underline;
+    }
+    .media {
+      margin: 20px auto;
+      max-width: 760px;
+      text-align: left;
+    }
+    .media video,
+    .media audio,
+    .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bérénice Gaça Courtin</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html#expositions">expositions</a></li>
+      <li><a href="index.html#project">project</a></li>
+      <li><a href="index.html#portfolio">portfolio</a></li>
+      <li><a href="index.html#about">about</a></li>
+      <li><a href="index.html#contact">contact</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="container">
+      <h2>– project C –</h2>
+      <p>Project C investigates coded gestures and the archive of the body. Through immersive video, layered audio, and a carefully chosen image, the work is a reflection on ritual, texture, and transmission.</p>
+      <div class="media">
+        <video controls>
+          <source src="project-c-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <audio controls>
+          <source src="project-c-audio.mp3" type="audio/mpeg" />
+        </audio>
+        <img src="project-c-image.jpg" alt="Project C visual" />
+      </div>
+      <p><a href="https://example.com/project-c" target="_blank">Learn more about Project C</a></p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Bérénice Courtin 2024. All rights reserved.</p>
+  </footer>
+</body>
+</html>
