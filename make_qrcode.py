@@ -14,6 +14,6 @@ qr.add_data("https://www.berenicecourtin.com/project-AnnaKowalska.html")
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
-img.save("QRcode/qr_code.png")
+img.save("QRcode/qr_codeProject.png")
 
-print("Saved: QRcode/qr_code.png")
+print("Saved: QRcode/qr_codeProject.png")
