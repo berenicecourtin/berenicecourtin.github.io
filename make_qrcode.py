@@ -10,10 +10,11 @@ qr = qrcode.QRCode(
     border=4,
 )
 
-qr.add_data("https://www.berenicecourtin.com/project-AnnaKowalska.html")
+qr.add_data("https://www.berenicecourtin.com/project-b.html")
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
-img.save("QRcode/qr_codeProject.png")
+img.save("QRcode/qr_codeproject-b.png")
 
-print("Saved: QRcode/qr_codeProject.png")
+print("Saved: QRcode/qr_codeproject-b.png")
+
